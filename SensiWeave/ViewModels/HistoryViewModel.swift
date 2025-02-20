@@ -24,21 +24,27 @@ class HistoryViewModel: ObservableObject {
         }
     }
     
-    func deleteRecommendation(at offsets: IndexSet) {
-        for index in offsets {
-            let recommendation = recommendations[index]
-            viewContext.delete(recommendation)
-        }
-        
+    func deleteRecommendation(_ recommendation: FabricRecommendation) {
+        viewContext.delete(recommendation)
+        saveContext()
+    }
+    
+    func deleteRecommendations(at offsets: IndexSet) {
+        offsets.map { recommendations[$0] }.forEach(viewContext.delete)
         saveContext()
     }
     
     func clearHistory() {
         let fetchRequest: NSFetchRequest<NSFetchRequestResult> = FabricRecommendation.fetchRequest()
         let batchDeleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
+        batchDeleteRequest.resultType = .resultTypeObjectIDs
         
         do {
-            try viewContext.execute(batchDeleteRequest)
+            let result = try viewContext.execute(batchDeleteRequest) as? NSBatchDeleteResult
+            let changes: [AnyHashable: Any] = [
+                NSDeletedObjectsKey: result?.result as? [NSManagedObjectID] ?? []
+            ]
+            NSManagedObjectContext.mergeChanges(fromRemoteContextSave: changes, into: [viewContext])
             recommendations.removeAll()
             alertItem = AlertItem(title: "Success", message: "History cleared successfully.")
         } catch {
@@ -57,4 +63,3 @@ class HistoryViewModel: ObservableObject {
         }
     }
 }
-

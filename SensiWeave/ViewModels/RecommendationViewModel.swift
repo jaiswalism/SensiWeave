@@ -27,16 +27,22 @@ class RecommendationViewModel: ObservableObject {
             recommendations = allFabrics.compactMap { fabric in
                 let score = calculateFabricScore(fabric)
                 if score > 0 {
-                    return FabricRecommendation(
-                        id: UUID(),
-                        fabricName: fabric.name,
-                        description: generateDescription(for: fabric, score: score),
-                        date: Date(),
-                        fabric: fabric
-                    )
+                    let newRecommendation = FabricRecommendation(context: self.viewContext)
+                    newRecommendation.id = UUID()
+                    newRecommendation.fabricName = fabric.name
+                    newRecommendation.descriptionText = generateDescription(for: fabric, score: score)
+                    newRecommendation.date = Date()
+                    newRecommendation.fabric = fabric
+                    return newRecommendation
                 }
                 return nil
-            }.sorted { $0.score > $1.score }
+            }
+            
+            recommendations.sort { (rec1, rec2) -> Bool in
+                let score1 = calculateFabricScore(rec1.fabric)
+                let score2 = calculateFabricScore(rec2.fabric)
+                return score1 > score2
+            }
             
             if recommendations.isEmpty {
                 alertItem = AlertItem(
@@ -53,7 +59,6 @@ class RecommendationViewModel: ObservableObject {
     private func calculateFabricScore(_ fabric: Fabric) -> Double {
         var score: Double = 0
         
-        // Temperature score
         if let suitableTemperatures = fabric.suitableTemperatures as? [String] {
             if userPreference.temperature > 25 && suitableTemperatures.contains("Hot") {
                 score += 2
@@ -62,17 +67,14 @@ class RecommendationViewModel: ObservableObject {
             }
         }
         
-        // Allergy score
-        if let userAllergies = userPreference.allergies as? [String] {
-            if !userAllergies.contains(where: { fabric.allergyInfo.lowercased().contains($0.lowercased()) }) {
+        if let userAllergies = userPreference.allergies as? Set<Allergy> {
+            if !userAllergies.contains(where: { fabric.allergyInfo.lowercased().contains($0.rawValue.lowercased()) }) {
                 score += 3
             }
         }
         
-        // Skin type score
-        if let suitableSkinTypes = fabric.suitableSkinTypes as? [String],
-           let userSkinType = userPreference.skinType as? String {
-            if suitableSkinTypes.contains(userSkinType) {
+        if let suitableSkinTypes = fabric.suitableSkinTypes as? [String] {
+            if suitableSkinTypes.contains(userPreference.skinType?.rawValue ?? "") {
                 score += 2
             }
         }
@@ -106,18 +108,11 @@ class RecommendationViewModel: ObservableObject {
     }
     
     func saveToFavorites(_ recommendation: FabricRecommendation) {
-        let newFavorite = FabricRecommendation(context: viewContext)
-        newFavorite.id = recommendation.id
-        newFavorite.fabricName = recommendation.fabricName
-        newFavorite.desc = recommendation.description
-        newFavorite.date = recommendation.date
-        newFavorite.fabric = recommendation.fabric
-        
         do {
             try viewContext.save()
             alertItem = AlertItem(
                 title: "Saved to Favorites",
-                message: "\(recommendation.fabricName) has been added to your favorites."
+                message: "\(recommendation.fabricName ?? "") has been added to your favorites."
             )
         } catch {
             print("Failed to save favorite: \(error)")

@@ -1,9 +1,9 @@
 import SwiftUI
+import CoreData
 
 @main
 struct SensiWeaveApp: App {
-    @UIApplicationDelegateAdaptor(AppDelegate.self)
-    var appDelegate
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     let persistenceController = PersistenceController.shared
     @AppStorage(Constants.UserDefaultsKeys.isDarkMode) private var isDarkMode = false
     @AppStorage(Constants.UserDefaultsKeys.hasCompletedOnboarding) private var hasCompletedOnboarding = false
@@ -15,17 +15,16 @@ struct SensiWeaveApp: App {
                 if isShowingSplash {
                     SplashScreenView(isActive: $isShowingSplash)
                         .environment(\.managedObjectContext, persistenceController.container.viewContext)
-                } else if hasCompletedOnboarding {
-                    ContentView()
+                } else if !hasCompletedOnboarding {
+                    OnboardingView(hasCompletedOnboarding: $hasCompletedOnboarding)
                         .environment(\.managedObjectContext, persistenceController.container.viewContext)
                 } else {
-                    OnboardingView(hasCompletedOnboarding: $hasCompletedOnboarding)
+                    ContentView()
                         .environment(\.managedObjectContext, persistenceController.container.viewContext)
                 }
             }
             .preferredColorScheme(isDarkMode ? .dark : .light)
+            .environmentObject(persistenceController)
         }
     }
 }
-
-

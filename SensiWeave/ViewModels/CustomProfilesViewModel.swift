@@ -24,21 +24,21 @@ class CustomProfilesViewModel: ObservableObject {
         }
     }
     
-    func addProfile(name: String, skinType: String, allergies: [String], extraNotes: String) {
+    func addProfile(name: String, skinType: SkinType, allergies: Set<Allergy>, extraNotes: String) {
         let newProfile = Profile(context: viewContext)
         newProfile.id = UUID()
         newProfile.name = name
-        newProfile.skinType = skinType
-        newProfile.allergies = allergies as NSObject
+        newProfile.skinType = skinType.rawValue
+        newProfile.allergies = allergies.map { $0.rawValue }
         newProfile.extraNotes = extraNotes
         
         saveContext()
     }
     
-    func updateProfile(_ profile: Profile, name: String, skinType: String, allergies: [String], extraNotes: String) {
+    func updateProfile(_ profile: Profile, name: String, skinType: SkinType, allergies: Set<Allergy>, extraNotes: String) {
         profile.name = name
-        profile.skinType = skinType
-        profile.allergies = allergies as NSObject
+        profile.skinType = skinType.rawValue
+        profile.allergies = allergies.map { $0.rawValue }
         profile.extraNotes = extraNotes
         
         saveContext()
@@ -64,4 +64,3 @@ class CustomProfilesViewModel: ObservableObject {
         }
     }
 }
-

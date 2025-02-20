@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="1.0">
-    <entity name="Fabric" representedClassName="Fabric" syncable="YES" codeGenerationType="class">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="Fabric" representedClassName=".Fabric" syncable="YES">
         <attribute name="allergyInfo" optional="YES" attributeType="String"/>
-        <attribute name="attribute" optional="YES"/>
-        <attribute name="attribute1" optional="YES"/>
-        <attribute name="attribute2" optional="YES"/>
-        <attribute name="attribute3" optional="YES"/>
-        <attribute name="attribute4" optional="YES"/>
         <attribute name="careInstructions" optional="YES" attributeType="String"/>
         <attribute name="imageName" optional="YES" attributeType="String"/>
         <attribute name="name" attributeType="String" spotlightIndexingEnabled="YES"/>
@@ -18,21 +13,22 @@
         <attribute name="uses" optional="YES" attributeType="Transformable"/>
         <relationship name="recommendations" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FabricRecommendation" inverseName="fabric" inverseEntity="FabricRecommendation"/>
     </entity>
-    <entity name="FabricRecommendation" representedClassName="FabricRecommendation" syncable="YES" codeGenerationType="class">
-        <attribute name="date" attributeType="Date" usesScalarValueType="NO"/>
-        <attribute name="descriptionText" optional="YES"/>
-        <attribute name="fabricName" optional="YES" attributeType="String"/>
+    <entity name="FabricRecommendation" representedClassName=".FabricRecommendation" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="descriptionText" optional="YES" attributeType="String"/>
+        <attribute name="fabricName" attributeType="String"/>
         <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
         <relationship name="fabric" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Fabric" inverseName="recommendations" inverseEntity="Fabric"/>
     </entity>
-    <entity name="Profile" representedClassName="Profile" syncable="YES" codeGenerationType="class">
+    <entity name="Profile" representedClassName=".Profile" syncable="YES">
         <attribute name="allergies" optional="YES" attributeType="Transformable"/>
         <attribute name="extraNotes" optional="YES" attributeType="String"/>
-        <attribute name="fabricName" attributeType="String"/>
         <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" attributeType="String"/>
         <attribute name="skinType" optional="YES" attributeType="String"/>
+        <attribute name="skinTypeRawValue" optional="YES" attributeType="String"/>
     </entity>
-    <entity name="UserPreference" representedClassName="UserPreference" syncable="YES" codeGenerationType="class">
+    <entity name="UserPreference" representedClassName=".UserPreference" syncable="YES">
         <attribute name="allergies" optional="YES" attributeType="Transformable"/>
         <attribute name="extraNotes" optional="YES" attributeType="String"/>
         <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>

@@ -13,7 +13,7 @@ class FabricLibraryViewModel: ObservableObject {
         } else {
             return fabrics.filter { fabric in
                 fabric.name.lowercased().contains(searchText.lowercased()) ||
-                (fabric.properties as? [String])?.contains(where: { $0.lowercased().contains(searchText.lowercased()) }) ?? false
+                fabric.properties.contains(where: { $0.lowercased().contains(searchText.lowercased()) })
             }
         }
     }
@@ -33,15 +33,18 @@ class FabricLibraryViewModel: ObservableObject {
         }
     }
     
-    func addFabric(name: String, properties: [String], careInstructions: String, imageName: String, origin: String, uses: [String], sustainabilityInfo: String) {
+    func addFabric(name: String, properties: [String], careInstructions: String, imageName: String, origin: String, uses: [String], sustainabilityInfo: String, suitableSkinTypes: [String], suitableTemperatures: [String], allergyInfo: String) {
         let newFabric = Fabric(context: viewContext)
         newFabric.name = name
-        newFabric.properties = properties as NSObject
+        newFabric.properties = properties
         newFabric.careInstructions = careInstructions
         newFabric.imageName = imageName
         newFabric.origin = origin
-        newFabric.uses = uses as NSObject
+        newFabric.uses = uses
         newFabric.sustainabilityInfo = sustainabilityInfo
+        newFabric.suitableSkinTypes = suitableSkinTypes
+        newFabric.suitableTemperatures = suitableTemperatures
+        newFabric.allergyInfo = allergyInfo
         
         saveContext()
     }

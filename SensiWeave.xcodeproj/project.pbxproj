@@ -10,9 +10,15 @@
 		CE12C3662D65D5A60068F29D /* SensiWeaveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12C3652D65D5A60068F29D /* SensiWeaveTests.swift */; };
 		CE12C3702D65D5A60068F29D /* SensiWeaveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12C36F2D65D5A60068F29D /* SensiWeaveUITests.swift */; };
 		CE12C3722D65D5A60068F29D /* SensiWeaveUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12C3712D65D5A60068F29D /* SensiWeaveUITestsLaunchTests.swift */; };
+		CE3473662D6717B1002415AB /* SensiWeave.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE3473642D6717B1002415AB /* SensiWeave.xcdatamodeld */; };
+		CEC1D6832D67083600C14B41 /* fabrics.json in Resources */ = {isa = PBXBuildFile; fileRef = CEC1D6822D67083600C14B41 /* fabrics.json */; };
+		CEC1D6852D670EFA00C14B41 /* FabricRecommendation+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D6842D670EFA00C14B41 /* FabricRecommendation+CoreDataClass.swift */; };
+		CEC1D6872D670F1D00C14B41 /* FabricRecommendation+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D6862D670F1D00C14B41 /* FabricRecommendation+CoreDataProperties.swift */; };
+		CEC1D6892D670F4B00C14B41 /* Fabric+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D6882D670F4B00C14B41 /* Fabric+CoreDataClass.swift */; };
+		CEC1D68B2D670F6700C14B41 /* Fabric+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC1D68A2D670F6700C14B41 /* Fabric+CoreDataProperties.swift */; };
 		CEFC5BDA2D65D70300CEBCE4 /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5BBD2D65D70300CEBCE4 /* AlertItem.swift */; };
 		CEFC5BDB2D65D70300CEBCE4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5BBE2D65D70300CEBCE4 /* Constants.swift */; };
-		CEFC5BDC2D65D70300CEBCE4 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5BBF2D65D70300CEBCE4 /* Persistence.swift */; };
+		CEFC5BDC2D65D70300CEBCE4 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5BBF2D65D70300CEBCE4 /* PersistenceController.swift */; };
 		CEFC5BDD2D65D70300CEBCE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFC5BC12D65D70300CEBCE4 /* Assets.xcassets */; };
 		CEFC5BDE2D65D70300CEBCE4 /* CustomProfilesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5BC22D65D70300CEBCE4 /* CustomProfilesViewModel.swift */; };
 		CEFC5BDF2D65D70300CEBCE4 /* FabricLibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5BC32D65D70300CEBCE4 /* FabricLibraryViewModel.swift */; };
@@ -30,15 +36,12 @@
 		CEFC5BEB2D65D70300CEBCE4 /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5BD02D65D70300CEBCE4 /* ReviewView.swift */; };
 		CEFC5BEC2D65D70300CEBCE4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5BD12D65D70300CEBCE4 /* SettingsView.swift */; };
 		CEFC5BED2D65D70300CEBCE4 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5BD22D65D70300CEBCE4 /* SplashScreenView.swift */; };
-		CEFC5BEE2D65D70300CEBCE4 /* FabricRecommendation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5BD42D65D70300CEBCE4 /* FabricRecommendation.swift */; };
 		CEFC5BEF2D65D70300CEBCE4 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5BD52D65D70300CEBCE4 /* Profile.swift */; };
 		CEFC5BF02D65D70300CEBCE4 /* UserPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5BD62D65D70300CEBCE4 /* UserPreference.swift */; };
 		CEFC5BF22D65D70300CEBCE4 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5BD92D65D70300CEBCE4 /* AppColors.swift */; };
 		CEFC5BF52D65D9B400CEBCE4 /* SensiWeaveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5BF42D65D9B400CEBCE4 /* SensiWeaveApp.swift */; };
 		CEFC5BF72D65D9E300CEBCE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5BF62D65D9E300CEBCE4 /* AppDelegate.swift */; };
-		CEFC5BF92D65D9F600CEBCE4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5BF82D65D9F600CEBCE4 /* SceneDelegate.swift */; };
 		CEFC5BFB2D65DA2700CEBCE4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5BFA2D65DA2700CEBCE4 /* ContentView.swift */; };
-		CEFC5C012D65DE5800CEBCE4 /* SensiWeave.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5BFF2D65DE5800CEBCE4 /* SensiWeave.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,9 +68,15 @@
 		CE12C36B2D65D5A60068F29D /* SensiWeaveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SensiWeaveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE12C36F2D65D5A60068F29D /* SensiWeaveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensiWeaveUITests.swift; sourceTree = "<group>"; };
 		CE12C3712D65D5A60068F29D /* SensiWeaveUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensiWeaveUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CE3473652D6717B1002415AB /* SensiWeave1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SensiWeave1.xcdatamodel; sourceTree = "<group>"; };
+		CEC1D6822D67083600C14B41 /* fabrics.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fabrics.json; sourceTree = "<group>"; };
+		CEC1D6842D670EFA00C14B41 /* FabricRecommendation+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FabricRecommendation+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CEC1D6862D670F1D00C14B41 /* FabricRecommendation+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FabricRecommendation+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CEC1D6882D670F4B00C14B41 /* Fabric+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fabric+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CEC1D68A2D670F6700C14B41 /* Fabric+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fabric+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		CEFC5BBD2D65D70300CEBCE4 /* AlertItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
 		CEFC5BBE2D65D70300CEBCE4 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		CEFC5BBF2D65D70300CEBCE4 /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		CEFC5BBF2D65D70300CEBCE4 /* PersistenceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		CEFC5BC12D65D70300CEBCE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEFC5BC22D65D70300CEBCE4 /* CustomProfilesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomProfilesViewModel.swift; sourceTree = "<group>"; };
 		CEFC5BC32D65D70300CEBCE4 /* FabricLibraryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FabricLibraryViewModel.swift; sourceTree = "<group>"; };
@@ -85,15 +94,12 @@
 		CEFC5BD02D65D70300CEBCE4 /* ReviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
 		CEFC5BD12D65D70300CEBCE4 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		CEFC5BD22D65D70300CEBCE4 /* SplashScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
-		CEFC5BD42D65D70300CEBCE4 /* FabricRecommendation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FabricRecommendation.swift; sourceTree = "<group>"; };
 		CEFC5BD52D65D70300CEBCE4 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		CEFC5BD62D65D70300CEBCE4 /* UserPreference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPreference.swift; sourceTree = "<group>"; };
 		CEFC5BD92D65D70300CEBCE4 /* AppColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		CEFC5BF42D65D9B400CEBCE4 /* SensiWeaveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensiWeaveApp.swift; sourceTree = "<group>"; };
 		CEFC5BF62D65D9E300CEBCE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CEFC5BF82D65D9F600CEBCE4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CEFC5BFA2D65DA2700CEBCE4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		CEFC5C002D65DE5800CEBCE4 /* SensiWeave.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SensiWeave.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +150,7 @@
 		CE12C34E2D65D5A50068F29D /* SensiWeave */ = {
 			isa = PBXGroup;
 			children = (
+				CEC1D6822D67083600C14B41 /* fabrics.json */,
 				CEFC5BFE2D65DC4100CEBCE4 /* Preview Content */,
 				CEFC5BD92D65D70300CEBCE4 /* AppColors.swift */,
 				CEFC5BC12D65D70300CEBCE4 /* Assets.xcassets */,
@@ -178,7 +185,7 @@
 			children = (
 				CEFC5BBD2D65D70300CEBCE4 /* AlertItem.swift */,
 				CEFC5BBE2D65D70300CEBCE4 /* Constants.swift */,
-				CEFC5BBF2D65D70300CEBCE4 /* Persistence.swift */,
+				CEFC5BBF2D65D70300CEBCE4 /* PersistenceController.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -217,10 +224,13 @@
 		CEFC5BD72D65D70300CEBCE4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				CEFC5BD42D65D70300CEBCE4 /* FabricRecommendation.swift */,
+				CE3473642D6717B1002415AB /* SensiWeave.xcdatamodeld */,
 				CEFC5BD52D65D70300CEBCE4 /* Profile.swift */,
 				CEFC5BD62D65D70300CEBCE4 /* UserPreference.swift */,
-				CEFC5BFF2D65DE5800CEBCE4 /* SensiWeave.xcdatamodeld */,
+				CEC1D6842D670EFA00C14B41 /* FabricRecommendation+CoreDataClass.swift */,
+				CEC1D6862D670F1D00C14B41 /* FabricRecommendation+CoreDataProperties.swift */,
+				CEC1D6882D670F4B00C14B41 /* Fabric+CoreDataClass.swift */,
+				CEC1D68A2D670F6700C14B41 /* Fabric+CoreDataProperties.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -230,7 +240,6 @@
 			children = (
 				CEFC5BF42D65D9B400CEBCE4 /* SensiWeaveApp.swift */,
 				CEFC5BF62D65D9E300CEBCE4 /* AppDelegate.swift */,
-				CEFC5BF82D65D9F600CEBCE4 /* SceneDelegate.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -347,6 +356,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC1D6832D67083600C14B41 /* fabrics.json in Resources */,
 				CEFC5BDD2D65D70300CEBCE4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,20 +382,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEFC5BDC2D65D70300CEBCE4 /* Persistence.swift in Sources */,
+				CEFC5BDC2D65D70300CEBCE4 /* PersistenceController.swift in Sources */,
 				CEFC5BE62D65D70300CEBCE4 /* HistoryView.swift in Sources */,
 				CEFC5BE22D65D70300CEBCE4 /* RecommendationViewModel.swift in Sources */,
 				CEFC5BEC2D65D70300CEBCE4 /* SettingsView.swift in Sources */,
+				CEC1D6872D670F1D00C14B41 /* FabricRecommendation+CoreDataProperties.swift in Sources */,
 				CEFC5BEA2D65D70300CEBCE4 /* RecommendationView.swift in Sources */,
-				CEFC5BEE2D65D70300CEBCE4 /* FabricRecommendation.swift in Sources */,
 				CEFC5BE02D65D70300CEBCE4 /* HistoryViewModel.swift in Sources */,
+				CEC1D6852D670EFA00C14B41 /* FabricRecommendation+CoreDataClass.swift in Sources */,
 				CEFC5BE42D65D70300CEBCE4 /* CustomProfilesView.swift in Sources */,
 				CEFC5BE12D65D70300CEBCE4 /* QuestionnaireViewModel.swift in Sources */,
 				CEFC5BDA2D65D70300CEBCE4 /* AlertItem.swift in Sources */,
 				CEFC5BEF2D65D70300CEBCE4 /* Profile.swift in Sources */,
 				CEFC5BE52D65D70300CEBCE4 /* FabricLibraryView.swift in Sources */,
 				CEFC5BE92D65D70300CEBCE4 /* QuestionnaireView.swift in Sources */,
-				CEFC5C012D65DE5800CEBCE4 /* SensiWeave.xcdatamodeld in Sources */,
 				CEFC5BF72D65D9E300CEBCE4 /* AppDelegate.swift in Sources */,
 				CEFC5BFB2D65DA2700CEBCE4 /* ContentView.swift in Sources */,
 				CEFC5BED2D65D70300CEBCE4 /* SplashScreenView.swift in Sources */,
@@ -394,10 +404,12 @@
 				CEFC5BF52D65D9B400CEBCE4 /* SensiWeaveApp.swift in Sources */,
 				CEFC5BE72D65D70300CEBCE4 /* OnboardingScreen.swift in Sources */,
 				CEFC5BDB2D65D70300CEBCE4 /* Constants.swift in Sources */,
+				CEC1D6892D670F4B00C14B41 /* Fabric+CoreDataClass.swift in Sources */,
+				CEC1D68B2D670F6700C14B41 /* Fabric+CoreDataProperties.swift in Sources */,
 				CEFC5BDE2D65D70300CEBCE4 /* CustomProfilesViewModel.swift in Sources */,
-				CEFC5BF92D65D9F600CEBCE4 /* SceneDelegate.swift in Sources */,
 				CEFC5BEB2D65D70300CEBCE4 /* ReviewView.swift in Sources */,
 				CEFC5BF22D65D70300CEBCE4 /* AppColors.swift in Sources */,
+				CE3473662D6717B1002415AB /* SensiWeave.xcdatamodeld in Sources */,
 				CEFC5BE32D65D70300CEBCE4 /* SettingsViewModel.swift in Sources */,
 				CEFC5BE82D65D70300CEBCE4 /* OnboardingView.swift in Sources */,
 			);
@@ -566,6 +578,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SensiWeave/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -596,6 +609,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SensiWeave/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -728,12 +742,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		CEFC5BFF2D65DE5800CEBCE4 /* SensiWeave.xcdatamodeld */ = {
+		CE3473642D6717B1002415AB /* SensiWeave.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				CEFC5C002D65DE5800CEBCE4 /* SensiWeave.xcdatamodel */,
+				CE3473652D6717B1002415AB /* SensiWeave1.xcdatamodel */,
 			);
-			currentVersion = CEFC5C002D65DE5800CEBCE4 /* SensiWeave.xcdatamodel */;
+			currentVersion = CE3473652D6717B1002415AB /* SensiWeave1.xcdatamodel */;
 			name = SensiWeave.xcdatamodeld;
 			path = /Users/user/Desktop/SwiftProject/SensiWeave/SensiWeave/Models/SensiWeave.xcdatamodeld;
 			sourceTree = "<group>";

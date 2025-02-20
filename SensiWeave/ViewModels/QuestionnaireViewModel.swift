@@ -29,11 +29,21 @@ class QuestionnaireViewModel: ObservableObject {
         !skinType.isEmpty && !allergies.isEmpty
     }
     
+    var skinTypeEnum: SkinType? {
+        get { return SkinType(rawValue: skinType) }
+        set { skinType = newValue?.rawValue ?? "" }
+    }
+
+    var allergiesEnum: Set<Allergy> {
+        get { return Set(allergies.compactMap { Allergy(rawValue: $0) }) }
+        set { allergies = Set(newValue.map { $0.rawValue }) }
+    }
+    
     func saveUserPreference() {
         let newPreference = UserPreference(context: viewContext)
         newPreference.id = UUID()
-        newPreference.skinType = skinType
-        newPreference.allergies = Array(allergies) as NSObject
+        newPreference.skinType = SkinType(rawValue: skinType) ?? .normal
+        newPreference.allergies = Set(allergies.compactMap { Allergy(rawValue: $0) })
         newPreference.temperature = temperature
         newPreference.extraNotes = extraNotes
         
@@ -43,6 +53,7 @@ class QuestionnaireViewModel: ObservableObject {
             print("Failed to save user preference: \(error)")
         }
     }
+
     
     func goToNextStep() {
         switch currentStep {
@@ -72,11 +83,11 @@ class QuestionnaireViewModel: ObservableObject {
         saveProgress()
     }
     
-    func toggleAllergy(_ allergy: String, isOn: Bool) {
-        if isOn {
-            allergies.insert(allergy)
-        } else {
+    func toggleAllergy(_ allergy: String) {
+        if allergies.contains(allergy) {
             allergies.remove(allergy)
+        } else {
+            allergies.insert(allergy)
         }
         saveProgress()
     }
