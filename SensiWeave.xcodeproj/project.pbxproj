@@ -7,15 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE12C3502D65D5A50068F29D /* SensiWeaveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12C34F2D65D5A50068F29D /* SensiWeaveApp.swift */; };
-		CE12C3522D65D5A50068F29D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12C3512D65D5A50068F29D /* ContentView.swift */; };
-		CE12C3542D65D5A60068F29D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE12C3532D65D5A60068F29D /* Assets.xcassets */; };
-		CE12C3572D65D5A60068F29D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE12C3562D65D5A60068F29D /* Preview Assets.xcassets */; };
-		CE12C3592D65D5A60068F29D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12C3582D65D5A60068F29D /* Persistence.swift */; };
-		CE12C35C2D65D5A60068F29D /* SensiWeave.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE12C35A2D65D5A60068F29D /* SensiWeave.xcdatamodeld */; };
 		CE12C3662D65D5A60068F29D /* SensiWeaveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12C3652D65D5A60068F29D /* SensiWeaveTests.swift */; };
 		CE12C3702D65D5A60068F29D /* SensiWeaveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12C36F2D65D5A60068F29D /* SensiWeaveUITests.swift */; };
 		CE12C3722D65D5A60068F29D /* SensiWeaveUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE12C3712D65D5A60068F29D /* SensiWeaveUITestsLaunchTests.swift */; };
+		CEFC5BDA2D65D70300CEBCE4 /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5BBD2D65D70300CEBCE4 /* AlertItem.swift */; };
+		CEFC5BDB2D65D70300CEBCE4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5BBE2D65D70300CEBCE4 /* Constants.swift */; };
+		CEFC5BDC2D65D70300CEBCE4 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5BBF2D65D70300CEBCE4 /* Persistence.swift */; };
+		CEFC5BDD2D65D70300CEBCE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEFC5BC12D65D70300CEBCE4 /* Assets.xcassets */; };
+		CEFC5BDE2D65D70300CEBCE4 /* CustomProfilesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5BC22D65D70300CEBCE4 /* CustomProfilesViewModel.swift */; };
+		CEFC5BDF2D65D70300CEBCE4 /* FabricLibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5BC32D65D70300CEBCE4 /* FabricLibraryViewModel.swift */; };
+		CEFC5BE02D65D70300CEBCE4 /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5BC42D65D70300CEBCE4 /* HistoryViewModel.swift */; };
+		CEFC5BE12D65D70300CEBCE4 /* QuestionnaireViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5BC52D65D70300CEBCE4 /* QuestionnaireViewModel.swift */; };
+		CEFC5BE22D65D70300CEBCE4 /* RecommendationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5BC62D65D70300CEBCE4 /* RecommendationViewModel.swift */; };
+		CEFC5BE32D65D70300CEBCE4 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5BC72D65D70300CEBCE4 /* SettingsViewModel.swift */; };
+		CEFC5BE42D65D70300CEBCE4 /* CustomProfilesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5BC92D65D70300CEBCE4 /* CustomProfilesView.swift */; };
+		CEFC5BE52D65D70300CEBCE4 /* FabricLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5BCA2D65D70300CEBCE4 /* FabricLibraryView.swift */; };
+		CEFC5BE62D65D70300CEBCE4 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5BCB2D65D70300CEBCE4 /* HistoryView.swift */; };
+		CEFC5BE72D65D70300CEBCE4 /* OnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5BCC2D65D70300CEBCE4 /* OnboardingScreen.swift */; };
+		CEFC5BE82D65D70300CEBCE4 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5BCD2D65D70300CEBCE4 /* OnboardingView.swift */; };
+		CEFC5BE92D65D70300CEBCE4 /* QuestionnaireView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5BCE2D65D70300CEBCE4 /* QuestionnaireView.swift */; };
+		CEFC5BEA2D65D70300CEBCE4 /* RecommendationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5BCF2D65D70300CEBCE4 /* RecommendationView.swift */; };
+		CEFC5BEB2D65D70300CEBCE4 /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5BD02D65D70300CEBCE4 /* ReviewView.swift */; };
+		CEFC5BEC2D65D70300CEBCE4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5BD12D65D70300CEBCE4 /* SettingsView.swift */; };
+		CEFC5BED2D65D70300CEBCE4 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5BD22D65D70300CEBCE4 /* SplashScreenView.swift */; };
+		CEFC5BEE2D65D70300CEBCE4 /* FabricRecommendation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5BD42D65D70300CEBCE4 /* FabricRecommendation.swift */; };
+		CEFC5BEF2D65D70300CEBCE4 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5BD52D65D70300CEBCE4 /* Profile.swift */; };
+		CEFC5BF02D65D70300CEBCE4 /* UserPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5BD62D65D70300CEBCE4 /* UserPreference.swift */; };
+		CEFC5BF22D65D70300CEBCE4 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5BD92D65D70300CEBCE4 /* AppColors.swift */; };
+		CEFC5BF52D65D9B400CEBCE4 /* SensiWeaveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5BF42D65D9B400CEBCE4 /* SensiWeaveApp.swift */; };
+		CEFC5BF72D65D9E300CEBCE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5BF62D65D9E300CEBCE4 /* AppDelegate.swift */; };
+		CEFC5BF92D65D9F600CEBCE4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5BF82D65D9F600CEBCE4 /* SceneDelegate.swift */; };
+		CEFC5BFB2D65DA2700CEBCE4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5BFA2D65DA2700CEBCE4 /* ContentView.swift */; };
+		CEFC5C012D65DE5800CEBCE4 /* SensiWeave.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEFC5BFF2D65DE5800CEBCE4 /* SensiWeave.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,17 +60,40 @@
 
 /* Begin PBXFileReference section */
 		CE12C34C2D65D5A50068F29D /* SensiWeave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SensiWeave.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE12C34F2D65D5A50068F29D /* SensiWeaveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensiWeaveApp.swift; sourceTree = "<group>"; };
-		CE12C3512D65D5A50068F29D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		CE12C3532D65D5A60068F29D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CE12C3562D65D5A60068F29D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		CE12C3582D65D5A60068F29D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		CE12C35B2D65D5A60068F29D /* SensiWeave.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SensiWeave.xcdatamodel; sourceTree = "<group>"; };
 		CE12C3612D65D5A60068F29D /* SensiWeaveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SensiWeaveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE12C3652D65D5A60068F29D /* SensiWeaveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensiWeaveTests.swift; sourceTree = "<group>"; };
 		CE12C36B2D65D5A60068F29D /* SensiWeaveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SensiWeaveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE12C36F2D65D5A60068F29D /* SensiWeaveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensiWeaveUITests.swift; sourceTree = "<group>"; };
 		CE12C3712D65D5A60068F29D /* SensiWeaveUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensiWeaveUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CEFC5BBD2D65D70300CEBCE4 /* AlertItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
+		CEFC5BBE2D65D70300CEBCE4 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CEFC5BBF2D65D70300CEBCE4 /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		CEFC5BC12D65D70300CEBCE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEFC5BC22D65D70300CEBCE4 /* CustomProfilesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomProfilesViewModel.swift; sourceTree = "<group>"; };
+		CEFC5BC32D65D70300CEBCE4 /* FabricLibraryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FabricLibraryViewModel.swift; sourceTree = "<group>"; };
+		CEFC5BC42D65D70300CEBCE4 /* HistoryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		CEFC5BC52D65D70300CEBCE4 /* QuestionnaireViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionnaireViewModel.swift; sourceTree = "<group>"; };
+		CEFC5BC62D65D70300CEBCE4 /* RecommendationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendationViewModel.swift; sourceTree = "<group>"; };
+		CEFC5BC72D65D70300CEBCE4 /* SettingsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		CEFC5BC92D65D70300CEBCE4 /* CustomProfilesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomProfilesView.swift; sourceTree = "<group>"; };
+		CEFC5BCA2D65D70300CEBCE4 /* FabricLibraryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FabricLibraryView.swift; sourceTree = "<group>"; };
+		CEFC5BCB2D65D70300CEBCE4 /* HistoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		CEFC5BCC2D65D70300CEBCE4 /* OnboardingScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingScreen.swift; sourceTree = "<group>"; };
+		CEFC5BCD2D65D70300CEBCE4 /* OnboardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		CEFC5BCE2D65D70300CEBCE4 /* QuestionnaireView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionnaireView.swift; sourceTree = "<group>"; };
+		CEFC5BCF2D65D70300CEBCE4 /* RecommendationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendationView.swift; sourceTree = "<group>"; };
+		CEFC5BD02D65D70300CEBCE4 /* ReviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
+		CEFC5BD12D65D70300CEBCE4 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		CEFC5BD22D65D70300CEBCE4 /* SplashScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		CEFC5BD42D65D70300CEBCE4 /* FabricRecommendation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FabricRecommendation.swift; sourceTree = "<group>"; };
+		CEFC5BD52D65D70300CEBCE4 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		CEFC5BD62D65D70300CEBCE4 /* UserPreference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPreference.swift; sourceTree = "<group>"; };
+		CEFC5BD92D65D70300CEBCE4 /* AppColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		CEFC5BF42D65D9B400CEBCE4 /* SensiWeaveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensiWeaveApp.swift; sourceTree = "<group>"; };
+		CEFC5BF62D65D9E300CEBCE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEFC5BF82D65D9F600CEBCE4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CEFC5BFA2D65DA2700CEBCE4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CEFC5C002D65DE5800CEBCE4 /* SensiWeave.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SensiWeave.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,22 +144,16 @@
 		CE12C34E2D65D5A50068F29D /* SensiWeave */ = {
 			isa = PBXGroup;
 			children = (
-				CE12C34F2D65D5A50068F29D /* SensiWeaveApp.swift */,
-				CE12C3512D65D5A50068F29D /* ContentView.swift */,
-				CE12C3532D65D5A60068F29D /* Assets.xcassets */,
-				CE12C3582D65D5A60068F29D /* Persistence.swift */,
-				CE12C35A2D65D5A60068F29D /* SensiWeave.xcdatamodeld */,
-				CE12C3552D65D5A60068F29D /* Preview Content */,
+				CEFC5BFE2D65DC4100CEBCE4 /* Preview Content */,
+				CEFC5BD92D65D70300CEBCE4 /* AppColors.swift */,
+				CEFC5BC12D65D70300CEBCE4 /* Assets.xcassets */,
+				CEFC5BF32D65D98F00CEBCE4 /* App */,
+				CEFC5BD72D65D70300CEBCE4 /* Models */,
+				CEFC5BC02D65D70300CEBCE4 /* Utilities */,
+				CEFC5BC82D65D70300CEBCE4 /* ViewModels */,
+				CEFC5BD32D65D70300CEBCE4 /* Views */,
 			);
 			path = SensiWeave;
-			sourceTree = "<group>";
-		};
-		CE12C3552D65D5A60068F29D /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				CE12C3562D65D5A60068F29D /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		CE12C3642D65D5A60068F29D /* SensiWeaveTests */ = {
@@ -131,6 +171,75 @@
 				CE12C3712D65D5A60068F29D /* SensiWeaveUITestsLaunchTests.swift */,
 			);
 			path = SensiWeaveUITests;
+			sourceTree = "<group>";
+		};
+		CEFC5BC02D65D70300CEBCE4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CEFC5BBD2D65D70300CEBCE4 /* AlertItem.swift */,
+				CEFC5BBE2D65D70300CEBCE4 /* Constants.swift */,
+				CEFC5BBF2D65D70300CEBCE4 /* Persistence.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		CEFC5BC82D65D70300CEBCE4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CEFC5BC22D65D70300CEBCE4 /* CustomProfilesViewModel.swift */,
+				CEFC5BC32D65D70300CEBCE4 /* FabricLibraryViewModel.swift */,
+				CEFC5BC42D65D70300CEBCE4 /* HistoryViewModel.swift */,
+				CEFC5BC52D65D70300CEBCE4 /* QuestionnaireViewModel.swift */,
+				CEFC5BC62D65D70300CEBCE4 /* RecommendationViewModel.swift */,
+				CEFC5BC72D65D70300CEBCE4 /* SettingsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CEFC5BD32D65D70300CEBCE4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CEFC5BFA2D65DA2700CEBCE4 /* ContentView.swift */,
+				CEFC5BC92D65D70300CEBCE4 /* CustomProfilesView.swift */,
+				CEFC5BCA2D65D70300CEBCE4 /* FabricLibraryView.swift */,
+				CEFC5BCB2D65D70300CEBCE4 /* HistoryView.swift */,
+				CEFC5BCC2D65D70300CEBCE4 /* OnboardingScreen.swift */,
+				CEFC5BCD2D65D70300CEBCE4 /* OnboardingView.swift */,
+				CEFC5BCE2D65D70300CEBCE4 /* QuestionnaireView.swift */,
+				CEFC5BCF2D65D70300CEBCE4 /* RecommendationView.swift */,
+				CEFC5BD02D65D70300CEBCE4 /* ReviewView.swift */,
+				CEFC5BD12D65D70300CEBCE4 /* SettingsView.swift */,
+				CEFC5BD22D65D70300CEBCE4 /* SplashScreenView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CEFC5BD72D65D70300CEBCE4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CEFC5BD42D65D70300CEBCE4 /* FabricRecommendation.swift */,
+				CEFC5BD52D65D70300CEBCE4 /* Profile.swift */,
+				CEFC5BD62D65D70300CEBCE4 /* UserPreference.swift */,
+				CEFC5BFF2D65DE5800CEBCE4 /* SensiWeave.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CEFC5BF32D65D98F00CEBCE4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CEFC5BF42D65D9B400CEBCE4 /* SensiWeaveApp.swift */,
+				CEFC5BF62D65D9E300CEBCE4 /* AppDelegate.swift */,
+				CEFC5BF82D65D9F600CEBCE4 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CEFC5BFE2D65DC4100CEBCE4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +310,7 @@
 				TargetAttributes = {
 					CE12C34B2D65D5A50068F29D = {
 						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
 					};
 					CE12C3602D65D5A60068F29D = {
 						CreatedOnToolsVersion = 15.4;
@@ -237,8 +347,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE12C3572D65D5A60068F29D /* Preview Assets.xcassets in Resources */,
-				CE12C3542D65D5A60068F29D /* Assets.xcassets in Resources */,
+				CEFC5BDD2D65D70300CEBCE4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,10 +372,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE12C3592D65D5A60068F29D /* Persistence.swift in Sources */,
-				CE12C35C2D65D5A60068F29D /* SensiWeave.xcdatamodeld in Sources */,
-				CE12C3522D65D5A50068F29D /* ContentView.swift in Sources */,
-				CE12C3502D65D5A50068F29D /* SensiWeaveApp.swift in Sources */,
+				CEFC5BDC2D65D70300CEBCE4 /* Persistence.swift in Sources */,
+				CEFC5BE62D65D70300CEBCE4 /* HistoryView.swift in Sources */,
+				CEFC5BE22D65D70300CEBCE4 /* RecommendationViewModel.swift in Sources */,
+				CEFC5BEC2D65D70300CEBCE4 /* SettingsView.swift in Sources */,
+				CEFC5BEA2D65D70300CEBCE4 /* RecommendationView.swift in Sources */,
+				CEFC5BEE2D65D70300CEBCE4 /* FabricRecommendation.swift in Sources */,
+				CEFC5BE02D65D70300CEBCE4 /* HistoryViewModel.swift in Sources */,
+				CEFC5BE42D65D70300CEBCE4 /* CustomProfilesView.swift in Sources */,
+				CEFC5BE12D65D70300CEBCE4 /* QuestionnaireViewModel.swift in Sources */,
+				CEFC5BDA2D65D70300CEBCE4 /* AlertItem.swift in Sources */,
+				CEFC5BEF2D65D70300CEBCE4 /* Profile.swift in Sources */,
+				CEFC5BE52D65D70300CEBCE4 /* FabricLibraryView.swift in Sources */,
+				CEFC5BE92D65D70300CEBCE4 /* QuestionnaireView.swift in Sources */,
+				CEFC5C012D65DE5800CEBCE4 /* SensiWeave.xcdatamodeld in Sources */,
+				CEFC5BF72D65D9E300CEBCE4 /* AppDelegate.swift in Sources */,
+				CEFC5BFB2D65DA2700CEBCE4 /* ContentView.swift in Sources */,
+				CEFC5BED2D65D70300CEBCE4 /* SplashScreenView.swift in Sources */,
+				CEFC5BDF2D65D70300CEBCE4 /* FabricLibraryViewModel.swift in Sources */,
+				CEFC5BF02D65D70300CEBCE4 /* UserPreference.swift in Sources */,
+				CEFC5BF52D65D9B400CEBCE4 /* SensiWeaveApp.swift in Sources */,
+				CEFC5BE72D65D70300CEBCE4 /* OnboardingScreen.swift in Sources */,
+				CEFC5BDB2D65D70300CEBCE4 /* Constants.swift in Sources */,
+				CEFC5BDE2D65D70300CEBCE4 /* CustomProfilesViewModel.swift in Sources */,
+				CEFC5BF92D65D9F600CEBCE4 /* SceneDelegate.swift in Sources */,
+				CEFC5BEB2D65D70300CEBCE4 /* ReviewView.swift in Sources */,
+				CEFC5BF22D65D70300CEBCE4 /* AppColors.swift in Sources */,
+				CEFC5BE32D65D70300CEBCE4 /* SettingsViewModel.swift in Sources */,
+				CEFC5BE82D65D70300CEBCE4 /* OnboardingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +560,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SensiWeave/Preview Content\"";
@@ -445,6 +579,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dev.sjx.SensiWeave;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -455,6 +590,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SensiWeave/Preview Content\"";
@@ -592,13 +728,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		CE12C35A2D65D5A60068F29D /* SensiWeave.xcdatamodeld */ = {
+		CEFC5BFF2D65DE5800CEBCE4 /* SensiWeave.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				CE12C35B2D65D5A60068F29D /* SensiWeave.xcdatamodel */,
+				CEFC5C002D65DE5800CEBCE4 /* SensiWeave.xcdatamodel */,
 			);
-			currentVersion = CE12C35B2D65D5A60068F29D /* SensiWeave.xcdatamodel */;
-			path = SensiWeave.xcdatamodeld;
+			currentVersion = CEFC5C002D65DE5800CEBCE4 /* SensiWeave.xcdatamodel */;
+			name = SensiWeave.xcdatamodeld;
+			path = /Users/user/Desktop/SwiftProject/SensiWeave/SensiWeave/Models/SensiWeave.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
